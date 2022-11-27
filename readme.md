@@ -1,8 +1,18 @@
 # PROYECTO AUTOMATION WEB
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 Utilizando selenium con python, probaremos el login de https://www.saucedemo.com/.
 El proyecto contiene 2 casos, 1 que de en error y otro que pase correctamente.
 
 > Navegador: En `--environment.py`, linea 5, se puede configurar a eleccion el driver.
+
+Versiones utilizadas:
+- ✨ ✨ ✨
+- Python 3.10.2
+- Pycharm Community 2022.2.4
+- pip 22.3.1
+- [virtualenv 20.16.7]
+- ✨ ✨ ✨
 
 
 ## Tener instalado para correr el código
@@ -78,3 +88,4 @@ Para pasar el reporte a HTML:
 [Selenium]: <https://pypi.org/project/selenium/>
 [allure-behave]: <https://pypi.org/project/allure-behave/>
 [behave-html-formatter]: <https://pypi.org/project/behave-html-formatter/>
+[virtualenv 20.16.7]: <https://pypi.org/project/virtualenv/>
