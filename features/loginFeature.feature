@@ -17,7 +17,7 @@ Feature: Login
     When ingreso "<user>" en el campo username
     And  ingreso "<password>" en el campo password
     And  hago click en el boton de login
-    Then valido mensaje de error <mensaje>
+    Then valido mensaje de error "<mensaje>"
     Examples:
       | user          | password     | mensaje   |
       | usuario_error | secret_sauce | not match |

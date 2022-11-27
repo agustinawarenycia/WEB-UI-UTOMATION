@@ -28,7 +28,7 @@ def step_impl(context, password):
 @step('hago click en el boton de login')
 def step_impl(context):
     login_page = LoginPage(context.driver)
-    time.sleep(1)
+    time.sleep(2)
     login_page.click_login()
 
 
@@ -36,11 +36,11 @@ def step_impl(context):
 def step_impl(context):
     home_page = HomePage(context.driver)
     assert "PRODUCTS" in home_page.get_text_header_title()
-    time.sleep(5)\
+    time.sleep(2)
 
 @then('valido mensaje de error "{mensaje}"')
 def step_impl(context, mensaje):
     login_page = LoginPage(context.driver)
-    assert mensaje in login_page.get_text_header_title()
-    time.sleep(5)
+    assert mensaje in login_page.get_text_error_login()
+    time.sleep(2)
 

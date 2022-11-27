@@ -9,6 +9,7 @@ class LoginPage:
         self.password = "password"
         self.login_button = "login-button"
 
+
     def get_user(self):
         return self.driver.find_element(By.ID, self.user)
 
@@ -26,4 +27,9 @@ class LoginPage:
 
     def send_password(self, password):
         self.get_password().send_keys(password)
+
+    def get_text_error_login(self):
+        return self.driver.find_element(By.XPATH, "//div[@class='error-message-container error']/h3").text
+
+
 
